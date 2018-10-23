@@ -1,8 +1,8 @@
-function tracking(tag, margin) {
+function tracking(url, tag, margin) {
   tag = tag || 'tracker'
   margin = margin || 50
 
-  var socket = io()
+  var socket = io(url)
   var areas = Array.prototype.map.call(document.querySelectorAll('.' + tag), function (el) {
     return {
       cls: el.className.split(' ').filter(function (v) {return v != tag}).join(),
