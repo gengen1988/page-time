@@ -1,7 +1,7 @@
 {
-  "name": "page-exit-demo",
+  "name": "page-time",
   "version": "1.1.1",
-  "description": "",
+  "description": "page stay tracker",
   "main": "index.js",
   "dependencies": {
     "express": "^4.16.3",
@@ -10,7 +10,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "start": "node index",
+    "docker-build": "docker build -t alsorunning/page-time:$npm_package_version .",
+    "docker-push": "docker push alsorunning/page-time:$npm_package_version"
   },
   "repository": {
     "type": "git",

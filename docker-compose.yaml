@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  page-time:
+    image: alsorunning/page-time:1.1.1
+    ports:
+    - 5000:5000
