@@ -8,8 +8,7 @@ Page Time
 第一步，引入依赖
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.slim.js">
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.slim.js"></script>
 <script src="http://page-time.k8s.vilsale.com/tracking.js"></script>
 ```
 
