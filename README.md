@@ -16,7 +16,7 @@ Page Time
 第二步，在要追踪的标签上加入 class
 
 ```html
-<div class="tracking area-1">
+<div class="tracker area-1">
   <p>本脚本可以追踪这句话停留在浏览器上的时长</p>
 </div>
 ```
