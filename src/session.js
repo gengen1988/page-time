@@ -35,6 +35,7 @@ module.exports = function createSession(id) {
       return getLocationId.then(id => {
         console.log('location id:', id);
         data.locationId = id
+        console.log('docs:', docs);
         return Promise.all([
           knex('sessions').insert(data),
           knex('areas').insert(docs)

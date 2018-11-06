@@ -3,7 +3,6 @@ const router = module.exports = require('express').Router()
 
 router.get('/', (req, res) => {
   knex('locations').then(docs => {
-    console.log(docs);
     res.render('locations', { docs })
   })
 })

@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: alsorunning/page-time
-  tag: 1.1.2
+  tag: 1.2.0
   pullPolicy: IfNotPresent
 
 nameOverride: ""
