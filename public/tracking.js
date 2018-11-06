@@ -1,10 +1,10 @@
 function tracking(opts) {
   opts = opts || {}
 
-  const tag = opts.tag
-  const margin = opts.margin || 50
-  const backend = opts.backend || 'http://page-time.k8s.vilsale.com/'
-  const className = opts.className || 'tracking'
+  var tag = opts.tag
+  var margin = opts.margin || 50
+  var backend = opts.backend || 'http://page-time.k8s.vilsale.com/'
+  var className = opts.className || 'tracking'
 
   var socket = io(backend)
 
