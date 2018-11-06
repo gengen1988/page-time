@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <div>
+    <a href="/">Home</a>
+  </div>
+  <h1>Areas</h1>
+  <ul>
+    <% docs.forEach(doc => { %>
+      <li><%= doc.name %>: <%= doc['sum(`duration`)'] / 1000 %>s</li>
+    <% }) %>
+  </ul>
+</body>
+</html>

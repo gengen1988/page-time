@@ -4,10 +4,10 @@ WORKDIR /usr/src/page-time
 COPY package*.json ./
 RUN npm i
 
-COPY index.js ./
-COPY tracking.js ./
-COPY index.html ./
+COPY . .
 
 EXPOSE 5000
+
+RUN npm run migrate
 
 CMD [ "npm", "start" ]

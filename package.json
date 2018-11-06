@@ -4,25 +4,32 @@
   "description": "page stay tracker",
   "main": "index.js",
   "dependencies": {
+    "consolidate": "^0.15.1",
     "express": "^4.16.3",
-    "socket.io": "^2.1.1"
+    "knex": "^0.15.2",
+    "nconf": "^0.10.0",
+    "socket.io": "^2.1.1",
+    "sqlite3": "^4.0.3",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index",
     "docker-build": "docker build -t alsorunning/page-time:$npm_package_version .",
-    "docker-push": "docker push alsorunning/page-time:$npm_package_version"
+    "docker-push": "docker push alsorunning/page-time:$npm_package_version",
+    "publish": "npm run docker-build && npm run docker-push",
+    "migrate": "knex migrate:latest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gengen1988/tracking-page-area-stay.git"
+    "url": "git+https://github.com/gengen1988/page-time.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gengen1988/tracking-page-area-stay/issues"
+    "url": "https://github.com/gengen1988/page-time/issues"
   },
-  "homepage": "https://github.com/gengen1988/tracking-page-area-stay#readme"
+  "homepage": "https://github.com/gengen1988/page-time#readme"
 }

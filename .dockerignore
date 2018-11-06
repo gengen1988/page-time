@@ -1,0 +1,7 @@
+helm-chart
+.git
+node_modules
+.gitignore
+*.sqlite3
+Dockerfile
+docker-compose.yaml

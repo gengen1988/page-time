@@ -1,8 +1,13 @@
 function tracking(url, tag, margin) {
-  tag = tag || 'tracker'
+  tag = tag || 'tracker'  // TODO change to tracking
   margin = margin || 50
 
   var socket = io(url)
+
+  socket.on('location', function (callback) {
+    callback(location.toString())
+  })
+
   var areas = Array.prototype.map.call(document.querySelectorAll('.' + tag), function (el) {
     return {
       cls: el.className.split(' ').filter(function (v) {return v != tag}).join(),

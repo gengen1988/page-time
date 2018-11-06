@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <h1>Locations</h1>
+  <ul>
+    <% docs.forEach(doc => { %>
+      <li><a href="locations/<%= doc.id %>">统计</a> <%= doc.location %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
